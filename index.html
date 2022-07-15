@@ -13,74 +13,98 @@
       content="Frontend developer,resume,cv,vozny bogdan,web developer"
     />
 
-    <title>Resume</title>
+    <title>Resume</title> 
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <img src="img/Avatar.png" alt="Avatar vozny bogdan" width="200px"/>
-    <h1>Vozny Bogdan</h1>
-    <p>I have been programming for over <strong>10 years</strong></p>
-    <p>I love <em>programming, reading books and traveling</em></p>
-<h4>list of social networks </h4>
-    <a href="https://t.me/VozniyBogdan" target="_blank">telegram</a>
-    |
-    <a href="https://www.linkedin.com/in/bogdan-vozniy-24a501206/ target="_blank"">linkedin</a>
-
+    <div class="conteiner">
+     <div class="info"> 
+    <img src="img/Avatar.png" alt="Avatar vozny bogdan"   class="avatar"/>
+    <div class="info-text">
+        <h1>Vozny Bogdan</h1>
+        <p>I have been programming for over <strong>10 years</strong></p>
+        <p>I love <em>programming, reading books and traveling</em></p>
+        <h4>Social networks</h4>
+        <a href="https://t.me/VozniyBogdan" target="_blank">Telegram</a>
+        |
+        <a href="https://www.linkedin.com/in/bogdan-vozniy-24a501206/ target="_blank"">Linkedin</a>
+    </div>
+    </div>
+    <div class="card bg-green">
     <h2>My hobbies</h2>
-        <ol>
-<li>programming</li>
-<li>reading books</li>
-<li>meditation</li>
-<li>learning new ways to increase programming efficiency</li>
+        <ol class="list">
+            <li>Programming</li>
+            <li>Reading books</li>
+            <li>Meditation</li>
+            <li>Learning new ways to increase programming efficiency</li>
         </ol>
+        </div>
+        <div class="card bg-red">
     <h2>Work experience</h2> 
-    <table>
-        <thead>
+    <table class="table">
+        <!-- <thead>
             <tr>
                 <td>Title</td>
                 <td>Job title</td>
                 <td>Year</td>
             </tr>
-        </thead>
+        </thead> -->
         <tbody>
             <tr>
-                <td>Head of development</td>
                 <td>Fintech company</td>
+                <td>Head of development</td>
                 <td>2019-2022</td>
             </tr>
         </tbody>
         <tbody>
             <tr>
-                <td>Senior Developer</td>
                 <td>Freelance</td>
+                <td>Senior Developer</td>
                 <td>2015-2019</td>
             </tr>
         </tbody>
         <tbody>
             <tr>
-                <td>Senior Developer</td>
                 <td>Insurance сompany</td>
+                <td>Senior Developer</td>
                 <td>2011-2015</td>
             </tr>
         </tbody>
     </table>
+</div>
+<div class="card bg-yellow projects"> 
+    <h2>My Projects</h2>
+        <ul class="list">
+            <li><a href=" " target="_blank">Project 1</a></li>
+            <li><a href=" " target="_blank">Project 2</a></li>
+            <li><a href=" " target="_blank">Project 3</a></li>
+            <li><a href=" " target="_blank">Project 4</a></li>
+        </ul>
+</div>
 
-<h2>Сontact with me</h2>
-<div>
+<form action="/" class="form">
+<!-- <div class="card bg-yellow"> -->
+<h2>Сontact with me</h2> 
+<div class="form-row">
+<div class="form-group">
     <label for="name">Your name</label> 
     <input type="text" id="name" placeholder="Enter your name">
 </div>
-<div>
+<div class="form-group">
     <label for="email">Your email</label> 
     <input type="email" id="email" placeholder="Enter your email">
 </div>
-<div>
+</div>
+<div class="form-group">
     <label for="message">Your message</label> 
-    <br>
+
     <textarea name="message" id="message" cols="20" rows="5" placeholder="Enter your message"></textarea> 
-    <input type="submit" value="Send">
+   
+    <input type="submit" value="Send" class="btn">
 </div>
 
-
-
+<!-- </div> -->
+</form>
+</div>
 </body>
 </html>
